@@ -118,9 +118,11 @@ USE_TZ = True
 
 
 
-STATIC_URL = 'static/'
-STATIC_DIR = os.path.join(BASE_DIR, 'static')
-STATICFILES_DIRS = [STATIC_DIR]
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+    '/path/to/webshop/static',
+]
 #STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 
